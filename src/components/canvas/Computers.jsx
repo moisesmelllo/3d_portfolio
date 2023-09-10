@@ -4,8 +4,24 @@ import { OrbitControls, Preload, useGLTF, useScroll } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
-const Computers = ({ isMobile }) => {
+const Computers = ({ screenWidth }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
+  const [ scale, setScale ] = useState(0)
+  const [ position, setPosition ] = useState([])
+
+  useEffect(() => {
+    // Atualiza a escala com base na largura da tela
+    if (screenWidth < 750) {
+      setScale(0.6);
+      setPosition([0, -3.3, -1])
+    } else if (screenWidth < 1100) {
+      setScale(0.8);
+      setPosition([0, -4.6, -1.3])
+    } else {
+      setScale(0.9);
+      setPosition([0, -4.6, -1.3])
+    }
+  }, [screenWidth]);
 
   return (
       <mesh> 
@@ -27,8 +43,8 @@ const Computers = ({ isMobile }) => {
         />
         <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.9}
-        position={isMobile ? [0, -3, -1.3] : [0, -4.6, -1.3]}
+        scale={scale}
+        position={position}
         rotation={[-0.01, -0.2, -0.1]}
       />
       </mesh>
@@ -36,24 +52,22 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsmobile ] = useState(false);
+  const [screenWidth, setScreenWidth ] = useState(window.innerWidth)
+
+  function handleResize() {
+    setScreenWidth(window.innerWidth)
+    console.log(screenWidth);
+  }
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 1000px)');
 
-    setIsmobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
-      setIsmobile(event.matches)
-    }
-
-    mediaQuery.addEventListener('change', handleMediaQueryChange)
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+      window.removeEventListener('resize', handleResize)
     }
 
-  }, [])
+  }, [screenWidth])
 
   return (
     <Canvas
@@ -69,7 +83,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Computers screenWidth={screenWidth}/>
       </Suspense>
 
       <Preload all />
