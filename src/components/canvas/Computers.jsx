@@ -21,7 +21,6 @@ const Computers = ({ screenWidth }) => {
       setScale(0.9);
       setPosition([0, -4.6, -1.3])
     }
-    console.log(computer)
   }, [screenWidth]);
 
   return (
@@ -57,7 +56,6 @@ const ComputersCanvas = () => {
 
   function handleResize() {
     setScreenWidth(window.innerWidth)
-    console.log(screenWidth);
   }
 
   useEffect(() => {
