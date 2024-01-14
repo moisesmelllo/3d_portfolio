@@ -9,6 +9,7 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const [scrooled, setScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
