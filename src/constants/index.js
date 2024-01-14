@@ -17,9 +17,14 @@ import {
   redux,
   nodejs,
   git,
-  carrent,
-  jobit,
-  tripguide,
+  threads,
+  promptopia,
+  nike,
+  next,
+  figma,
+  mongodb,
+  tailwind,
+  nextauth,
 } from "../assets";
 
 export const navLinks = [
@@ -93,6 +98,26 @@ const technologies = [
     name: "python",
     icon: python,
   },
+  {
+    name: "nextjs",
+    icon: next,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "mongoDB",
+    icon: mongodb,
+  },
+  {
+    name: 'tailwind',
+    icon: tailwind,
+  },
+  {
+    name: 'nextauth',
+    icon: nextauth,
+  }
 ];
 
 const experiences = [
@@ -127,7 +152,7 @@ const experiences = [
     company_name: "JavaScript",
     icon: js,
     iconBg: "#383E56",
-    date: "Junho 2023 - Agora",
+    date: "Junho 2023 - dezembro 2023",
     points: [
       "Depois de passar as férias inteiras estudando, cheguei à conclusão de que quero ser um desenvolvedor web.",
       "Após esta conclusão, migrei radicalmente para o JavaScript e iniciei meus estudos, que por sinal foram muito mais rápidos, tendo em vista que já tinha uma bagagem na programação.",
@@ -141,7 +166,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Agora - Futuro",
     points: [
-      "Ano que vem, começo minha faculdade de Engenharia de Software.",
+      "Atualmente estou no segundo semestre da minha faculdade de engenharia de software pela Anhanguera",
       "Sempre gostei de ser autodidata, porém conhecimento nunca é demais, então vou atrás deste diploma, enquanto adquiro o máximo de conhecimento possível.",
       "Além disso, estou à procura da minha primeira vaga como desenvolvedor.",
       "Sei que posso aprender muito mais quando estiver trabalhando na área e sei que serei o melhor funcionário possível.",
@@ -179,6 +204,72 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Threads clone",
+    description:
+      "Inspirado no novo threads no instagram",
+    tags: [
+      {
+        name: "next js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "shadcn ui",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: threads,
+    source_code_link: "https://github.com/moisesmelllo/threads",
+    deploy_link: 'https://threads-three-omega.vercel.app/'
+  },
+  {
+    name: "Promptopia",
+    description:
+      "Crie e divulgue seus prompts de IA",
+    tags: [
+      {
+        name: "next js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: promptopia,
+    source_code_link: "https://github.com/moisesmelllo/promptopia-official",
+    deploy_link: 'https://promptopia-official.vercel.app/'
+  },
+  {
+    name: "Nike sales page",
+    description:
+      "O melhor da nike com o melhor do css",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nike,
+    source_code_link: "https://github.com/moisesmelllo/threads",
+    deploy_link: 'https://threads-three-omega.vercel.app/'
+  },
   {
     name: "Aplicativo do clima",
     description:

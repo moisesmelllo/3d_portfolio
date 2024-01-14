@@ -30,6 +30,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import next from './tech/next.png';
+import nextauth from './tech/nextauth.png'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -40,7 +42,16 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import threads from './threads.png'
+import promptopia from './promptopia.png'
+import nike from './nike.png'
+
 export {
+  threads,
+  promptopia,
+  nike,
+  next,
+  nextauth,
   python,
   automacao,
   js,
