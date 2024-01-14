@@ -50,7 +50,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]'
       >
-        Sou um desenvolvedor front-end com experiência em HTML, CSS, JavaScript e React. Minha paixão está em criar interfaces web visualmente atraentes e interativas. Tenho habilidades sólidas no desenvolvimento de páginas web, focando em usabilidade e design. Estou sempre em busca de desafios para melhorar minhas habilidades e criar produtos excepcionais.
+        Sou um desenvolvedor full stack com experiência em nextjs, tailwindcss e MongoDB. Minha paixão está em criar interfaces web visualmente atraentes e interativas além de funcionais e úteis. 
+        Tenho habilidades sólidas no desenvolvimento de páginas web, focando em usabilidade, design, autenticação e retenção de dados. Estou sempre em busca de desafios para melhorar minhas habilidades e criar produtos excepcionais.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
