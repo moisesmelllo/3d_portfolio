@@ -1,14 +1,14 @@
 import { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF, useScroll } from '@react-three/drei';
+import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
 const Computers = ({ screenWidth }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
-  const [ scale, setScale ] = useState(0)
-  const [ position, setPosition ] = useState([])
-
+  const [ scale, setScale ] = useState(0.6)
+  const [ position, setPosition ] = useState([0, -3.3, -1])
+  
   useEffect(() => {
     // Atualiza a escala com base na largura da tela
     if (screenWidth < 750) {
@@ -21,6 +21,7 @@ const Computers = ({ screenWidth }) => {
       setScale(0.9);
       setPosition([0, -4.6, -1.3])
     }
+    console.log(computer)
   }, [screenWidth]);
 
   return (
@@ -83,7 +84,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers screenWidth={screenWidth}/>
+        {<Computers screenWidth={screenWidth}/>}
       </Suspense>
 
       <Preload all />
