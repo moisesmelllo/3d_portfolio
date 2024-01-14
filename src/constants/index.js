@@ -267,8 +267,8 @@ const projects = [
       },
     ],
     image: nike,
-    source_code_link: "https://github.com/moisesmelllo/threads",
-    deploy_link: 'https://threads-three-omega.vercel.app/'
+    source_code_link: "https://github.com/moisesmelllo/nike_pagina_de_vendas",
+    deploy_link: 'https://nike-pagina-de-vendas.vercel.app/'
   },
   {
     name: "Aplicativo do clima",
