@@ -42,12 +42,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import threads from './threads.png'
+import portfolio from './portfolio.png'
 import promptopia from './promptopia.png'
 import nike from './nike.png'
 
 export {
-  threads,
+  portfolio,
   promptopia,
   nike,
   next,

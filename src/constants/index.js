@@ -17,7 +17,7 @@ import {
   redux,
   nodejs,
   git,
-  threads,
+  portfolio,
   promptopia,
   nike,
   next,
@@ -205,26 +205,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Threads clone",
+    name: "Nike sales page",
     description:
-      "Inspirado no novo threads no instagram",
+      "O melhor da nike com o melhor do css",
     tags: [
       {
-        name: "next js",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongoDB",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "shadcn ui",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: threads,
-    source_code_link: "https://github.com/moisesmelllo/threads",
-    deploy_link: 'https://threads-three-omega.vercel.app/'
+    image: nike,
+    source_code_link: "https://github.com/moisesmelllo/nike_pagina_de_vendas",
+    deploy_link: 'https://nike-pagina-de-vendas.vercel.app/'
   },
   {
     name: "Promptopia",
@@ -249,27 +249,28 @@ const projects = [
     deploy_link: 'https://promptopia-official.vercel.app/'
   },
   {
-    name: "Nike sales page",
+    name: "Portfolio",
     description:
-      "O melhor da nike com o melhor do css",
+      "Um exemplo de portfolio inicial",
     tags: [
       {
         name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "vite",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "sass",
         color: "pink-text-gradient",
       },
     ],
-    image: nike,
-    source_code_link: "https://github.com/moisesmelllo/nike_pagina_de_vendas",
-    deploy_link: 'https://nike-pagina-de-vendas.vercel.app/'
+    image: portfolio,
+    source_code_link: "https://github.com/moisesmelllo/sass",
+    deploy_link: 'https://sass-ochre-tau.vercel.app/'
   },
+  
   {
     name: "Aplicativo do clima",
     description:
