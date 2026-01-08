@@ -17,7 +17,6 @@ import {
   redux,
   nodejs,
   git,
-  portfolio,
   devHub,
   promptopia,
   nike,

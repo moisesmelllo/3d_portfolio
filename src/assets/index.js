@@ -46,6 +46,8 @@ import portfolio from './portfolio.png'
 import promptopia from './promptopia.png'
 import nike from './nike.png'
 
+import devHub from './devHub.png'
+
 export {
   portfolio,
   promptopia,
@@ -88,4 +90,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  devHub,
 };
