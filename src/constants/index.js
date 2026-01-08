@@ -18,6 +18,7 @@ import {
   nodejs,
   git,
   portfolio,
+  devHub,
   promptopia,
   nike,
   next,
@@ -111,13 +112,13 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: 'tailwind',
+    name: "tailwind",
     icon: tailwind,
   },
   {
-    name: 'nextauth',
+    name: "nextauth",
     icon: nextauth,
-  }
+  },
 ];
 
 const experiences = [
@@ -170,11 +171,10 @@ const experiences = [
       "Sempre gostei de ser autodidata, porém conhecimento nunca é demais, então vou atrás deste diploma, enquanto adquiro o máximo de conhecimento possível.",
       "Além disso, estou à procura da minha primeira vaga como desenvolvedor.",
       "Sei que posso aprender muito mais quando estiver trabalhando na área e sei que serei o melhor funcionário possível.",
-      "Quem sabe minha primeira vaga não é na sua empresa!"
+      "Quem sabe minha primeira vaga não é na sua empresa!",
     ],
   },
 ];
-
 
 const testimonials = [
   {
@@ -206,8 +206,7 @@ const testimonials = [
 const projects = [
   {
     name: "Nike sales page",
-    description:
-      "O melhor da nike com o melhor do css",
+    description: "O melhor da nike com o melhor do css",
     tags: [
       {
         name: "React",
@@ -224,12 +223,11 @@ const projects = [
     ],
     image: nike,
     source_code_link: "https://github.com/moisesmelllo/nike_pagina_de_vendas",
-    deploy_link: 'https://nike-pagina-de-vendas.vercel.app/'
+    deploy_link: "https://nike-pagina-de-vendas.vercel.app/",
   },
   {
     name: "Promptopia",
-    description:
-      "Crie e divulgue seus prompts de IA",
+    description: "Crie e divulgue seus prompts de IA",
     tags: [
       {
         name: "next js",
@@ -246,35 +244,33 @@ const projects = [
     ],
     image: promptopia,
     source_code_link: "https://github.com/moisesmelllo/promptopia-official",
-    deploy_link: 'https://promptopia-official.vercel.app/'
+    deploy_link: "https://promptopia-official.vercel.app/",
   },
   {
-    name: "Portfolio",
-    description:
-      "Um exemplo de portfolio inicial",
+    name: "DevEvent",
+    description: "The Hub for Every Dev Event You Can't Miss",
     tags: [
       {
-        name: "React",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "vite",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "sass",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
-    image: portfolio,
-    source_code_link: "https://github.com/moisesmelllo/sass",
-    deploy_link: 'https://sass-ochre-tau.vercel.app/'
+    image: devHub,
+    source_code_link: "https://github.com/moisesmelllo/event-hub",
+    deploy_link: "https://event-hub-sandy.vercel.app/",
   },
-  
+
   {
     name: "Aplicativo do clima",
-    description:
-      "Website de consulta do clima de qualquer local do planeta.",
+    description: "Website de consulta do clima de qualquer local do planeta.",
     tags: [
       {
         name: "react",
@@ -290,8 +286,9 @@ const projects = [
       },
     ],
     image: weather_project,
-    source_code_link: "https://github.com/moisesmelllo/WeatherApp/tree/main/weather-app-react",
-    deploy_link: 'https://weather-app-delta-coral.vercel.app/'
+    source_code_link:
+      "https://github.com/moisesmelllo/WeatherApp/tree/main/weather-app-react",
+    deploy_link: "https://weather-app-delta-coral.vercel.app/",
   },
 
   {
@@ -310,7 +307,7 @@ const projects = [
     ],
     image: flexbox_project,
     source_code_link: "https://github.com/moisesmelllo/flexbox-project",
-    deploy_link: "https://flexbox-project-psi.vercel.app/"
+    deploy_link: "https://flexbox-project-psi.vercel.app/",
   },
   {
     name: "Carrinho de compras",
@@ -331,8 +328,9 @@ const projects = [
       },
     ],
     image: compras_project,
-    source_code_link: "https://github.com/moisesmelllo/Projeto-Carrinho-de-compras/tree/main/build",
-    deploy_link: 'https://projeto-carrinho-de-compras-seven.vercel.app/'
+    source_code_link:
+      "https://github.com/moisesmelllo/Projeto-Carrinho-de-compras/tree/main/build",
+    deploy_link: "https://projeto-carrinho-de-compras-seven.vercel.app/",
   },
 ];
 
